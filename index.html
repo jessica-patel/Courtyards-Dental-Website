@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Courtyards Dental Center</title>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0/favicon-16x16.png">
+        <link rel="manifest" href="favicon_package_v0/site.webmanifest">
+        <link rel="mask-icon" href="favicon_package_v0/safari-pinned-tab.svg" color="#603cba">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="theme-color" content="#ffffff">
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- required to add fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Paprika&family=Poppins:wght@300&family=Sofia+Sans&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+        <!-- hamburger menu -->
+        <script src="https://kit.fontawesome.com/9dea9f1489.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- for the header -->
+        <header id="navigation">
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="#top">
+                        <img src="img/logo_black.png" alt="Courtyards Dental Center Logo" class="logo">
+                    </a>
+                    <nav class="circleBehind">
+                        <ul>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <!-- <li><a href="contact_us.html">Contact</a></li> -->
+                            <li><a href="#contact" class="button">Contact Us</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main id="top">
+            <!-- for the greeting section -->
+            <div id="home_greeting" class="greeting" name="work">
+                <div class="row"> <!-- extra div to create a row to put a bottom border -->
+                    <div class="center" style="padding-left: auto;">
+                        <span style="float:none;">
+                            <div class="col-lg-5" style="display: block;">
+                                <h1>Welcome to<br>Courtyards Dental Center</h1>
+                                <p>We create smiles you'd be proud of sharing!</p>
+                                <a href="#contact" class="button">CONTACT US</a>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="col-lg-7 wide">
+                        <span>
+                            <picture>
+                            <source srcset="img/front.jpg" media="(max-width:767px)">
+                            <img src="img/front.jpg" alt="Entrance View of Clinic">
+                            </picture>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- for the triple standard section -->
+            <div class="v_container" id="triple">
+                <div>
+                    <h2 class="center">What Sets Us Apart</h2>
+                    <!-- three standards -->
+                    <div class="row container center"> <!-- containing all 3 -->
+                        <div class="col-md-3 center">
+                            <picture>
+                                <source srcset="img/price.png" media="(max-width:767px)">
+                                <img src="img/price.png" alt="Transparent Pricing Icon" class="triple_picture">
+                            </picture>
+                            <h3>Transparent Pricing</h3>
+                            <p class="blurb">We provide the dental care that you need, while keeping you aware of pricing.</p>
+                        </div>
+                        <div class="col-md-3 center">
+                            <picture>
+                                <source srcset="img/hours.png" media="(max-width:767px)">
+                                <img src="img/hours.png" alt="Transparent Pricing Icon" class="triple_picture">
+                            </picture>
+                            <h3>Flexible Hours</h3>
+                            <p class="blurb">We help you fit in your dental visits, despite your busy schedule.</p>
+                        </div>
+                        <div class="col-md-3 col-lg-7 center">
+                            <picture>
+                                <source srcset="img/emergency.png" media="(max-width:767px)">
+                                <img src="img/emergency.png" alt="Transparent Pricing Icon" class="triple_picture">
+                            </picture>
+                            <h3>Emergency Support</h3>
+                            <p class="blurb">You can rely on us to provide guidance or treatment in emergencies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- for the provider blurb -->
+            <div class="container v_container">
+                <div class="border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Providing you honest and educative dentistry</h2>
+                            <p class="blurb" style="padding-top: 20px;">We ensure understanding of dental hygiene practices, maintenance of oral health, and clarity through procedures so that you can have the utmost care for your smile!
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <picture>
+                                <source srcset="img/kid_dentist.jpg" media="(max-width:767px)">
+                                <img src="img/kid_dentist.jpg" alt="Child at dentist" class="provider">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- for the footer -->
+        <footer id="contact">
+            <div class="container v_container">
+                <h2 class="center">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>We are happy to answer any questions. <br>Give us a call!</p>
+                        <ul>
+                            <li>
+                                <span class="icon-with-text" style="align-items: center;">
+                                    <i class="fa-solid fa-phone icon" style="color: #000000;"></i>
+                                    <p>(905) 553 - 5266</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon-with-text" style="align-items: center;">
+                                    <i class="fa-solid fa-fax icon" style="color: #000000;"></i>
+                                    <p>(905) 553 - 6266</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="icon-with-text" style="align-items: first baseline;">
+                                    <i class="fa-solid fa-location-dot icon" style="color: #000000;"></i>
+                                    <p>2396 Major Mackenzie Drive W., Unit #6,<br>Vaughan, ON L6A 4Y1</p>
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="container">
+                            <a href="mailto:courtyardsdental@gmail.com" class="button contact">Send an Email</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Clinic Hours</h3>
+                        <table border="1">
+                            <!-- <tr>
+                                <th>Header 1</th>
+                                <th>Header 2</th>
+                                <th>Header 3</th>
+                            </tr> -->
+                            <tr>
+                                <td>Monday</td>
+                                <td> 10am - 6pm</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td> 10am - 6pm</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td> 10am - 6pm</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td> CLOSED</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td> 10am - 6pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td> 10am - 4pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td> CLOSED</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- <div class="col-md-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0792006302063!2d-79.51950782369553!3d43.85418707109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b28d8ee0ff13f%3A0xf2a5d09ad2e4084d!2sCourtyards%20Dental%20Center%20-%20Dr.%20Annahvathany%20Sivakumaran%2C%20DMD!5e0!3m2!1sen!2sca!4v1692977421797!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> -->
+                </div>
+                <div class="container center">
+                    <p>Copyright Statement</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>

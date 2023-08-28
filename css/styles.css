@@ -1,0 +1,612 @@
+/* Colors used:
+Background (white shade): #EAF1FA;
+Text (black shade): #181715;
+Primary (light grey): #DADADA;
+Secondary (light beige): #BCB2A8;
+Accent/CTA (purple): #592A66;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0em; /* standard size for body is 16px */
+    font-weight: 300;
+    line-height: 1.6; /* 1.6 times the font-size */
+    color: #181715;
+}
+
+main {
+    padding-top: 90px; /* 90 because the header has height=90 */
+}
+
+header {
+    background-color: #DADADA;
+    /* text-align: center; */
+    /* padding: 10px 0; CF suggested 10 0 4 but I used 10 0 */
+    /* border-bottom: 3px solid #4a4a4a; */
+    /* css-box-shadow ------------ */
+    position: fixed;
+    width: [object Object]px;
+    height: [object Object]px;
+    /* background: #232E35;  */
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5); 
+    -webkit-box-shadow: 0 0 20px rgba(21, 30, 35, .5); 
+    -moz-box-shadow: 0 0 20px rgba(21, 30, 35, .5); 
+
+    width: 100%; /* since position=fixed was used */
+}
+
+/* -- HEADINGS -- */
+/* CareerFoundry sizings for now*/
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75em;
+    font-weight: 400;
+    text-align: center;
+    /* padding: 0.67em 0 0 0; */
+    line-height: normal;
+    margin-block-start: 0; /* gets rid of margin around headings */
+    margin-block-end: 0;
+}
+  
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    /* padding: 0.67em 0 0 0; */
+    line-height: normal;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+  
+h3 {
+    text-transform: uppercase;
+    font-size: 1.0em; /* equiv to 16px standard min size, keep in em for scalability */
+    font-weight: 400;
+    line-height: normal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+/* h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+} */
+
+/* -- IMAGES -- */
+img {
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* slideshow pictures */
+.image-container {
+    text-align: center;
+}
+  
+#gallery-image {   
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    margin: 10px 50px 0 50px;
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    max-width: 60px;
+}
+
+footer {
+    background-color: #DADADA;
+}
+
+footer > div > div > div > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer > div > div > div > ul > li {
+    display: block;
+    padding: 0 15px;
+}
+
+footer > div > div > div > ul > li > span > p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+footer > div > div > div > p {
+    margin: 0 0.5em;
+}
+
+.socials {
+    width: 150%;
+    margin: 5% 5% 0 0;
+    display: inline-block;
+}
+
+.me {
+    width: 45%;
+    max-width: 200px;
+}
+
+.logo {
+    float: left;
+    max-width: 18%;
+    min-width: 150px;
+    margin: 15px 0 15px 0;
+}
+
+/* .icon {
+    max-width: 15%;
+    display: inline-block;
+} */
+
+.icon-with-text {
+    display: inline-flex; /* Display the icon and text in a row */
+    /*align-items: center; /* Align vertically in the middle */
+}
+
+.icon {
+width: 20px; /* Adjust the width of the icon */
+height: 20px; /* Adjust the height of the icon */
+margin-right: 5px; /* Add some spacing between icon and text */
+}
+
+table {
+    border: transparent;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* -- DESIGN -- */
+.border {
+    margin: 0px 10px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: #181715;
+}
+
+.provider {
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.provider_rounded {
+    border-radius: 20px;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.animation {
+    width: 100%;
+    display: block;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;  
+}
+/* This can be written as:
+.sun {
+    animation: 4s color-change infinite alternate linear;
+} */
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* -- HERO -- */
+.greeting {
+    background-color: #FFFFFF;
+    padding: 20px 0 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+#home_greeting {
+    padding: 0;
+}
+
+/* #hero h1 {
+    font-family: 'Paprika', cursive;
+} */
+
+/* -- HYPERLINKS AND BUTTONS -- */
+a,
+a:active { /* active: when being clicked */
+    color: #592A66; /* might change to CTA colour */
+    text-decoration: none; /* No underlining */
+  }
+
+/* a:visited {
+    color: #F19C78;
+} */
+
+a:hover,
+a:focus {
+    /*text-decoration: underline; /* Underlining when hovering over a link */
+    font-weight: 500;
+}
+
+.button {
+    display: inline-block;
+    background-color: #592A66;
+    color: #F7F6F9; /* needed to override the default link color */
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 18px;
+    /* border-bottom: 2px solid #994c30; width of the border, type, color */
+    transition-duration: .2s;
+    transition-property: background-color;
+    /* transitions can be combined into "transition: 0.2s opacity;" */
+}
+
+.button:hover {
+    /* background-image: linear-gradient(180deg, #ED78A5, #89D3FB);  */
+    /*opacity: 80%;/* Reduces the opacity of the button to 80% */
+    background-color: #3E1D47;
+    color: #F7F6F9;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #592A66;
+    text-transform: uppercase;
+    border: 2px solid #592A66;
+    margin: 0 0 20px 0;
+}
+
+.button.contact:hover {
+    background-color: #592A66; /* .button.hover code above already reduced opacity */
+    color: #F7F6F9;
+}
+
+.purple {
+    color: #592A66;
+    font-weight: 500;
+}
+
+/* might add button-secondary and button-small */
+
+/* -- LAYOUT STYLINGS -- */
+.container {
+    padding: 0 15px;
+}
+
+.v_container {
+    padding: 15px 0;
+}
+
+.blurb {
+    width: 95%;
+    max-width: 25em;
+    margin: 0;
+}
+
+.row {
+    margin: 25px 0 0 0; /* 25px top and bottom, 0 left and right */
+}
+
+#triple {
+    background-color: #DADADA;
+    margin: 0;
+}
+
+.triple_picture {
+    max-width: 80px;
+    width: 30%;
+}
+
+/* #greeting .row { /* only applying to row class within work id */
+    /* padding-bottom: 10px; */
+    /* border-bottom: 1px solid #181715; */
+
+.center { /* to add center class to any HTML elements */
+    text-align: center;
+}
+
+/* -- NAVIGATION -- */
+
+#navigation {
+    transition: top 0.3s;
+    position: fixed;
+}
+
+nav > ul { /* this selects unordered lists within the nav element */
+    list-style-type: none; /* removing bullets */
+    padding: 0; /* removing auto padding from ul */
+    margin: 0;
+}
+
+nav > ul > li > a {
+    /* padding: 10px 20px; */
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #181715;
+}
+
+nav > ul > li > a:hover {
+    color: #181715;
+    text-decoration: bold;
+}
+
+.navtoggle li:not(:last-child) { /* hides menu items on default */
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    /* right: 20px;
+    top: 0px; */
+    right: 15px;
+    top: 25px;
+    font-size: 30px; /* size of icon */
+    /* padding: 8px 10px 8px 0; */
+    padding: 0;
+}
+
+.navtoggle.responsive ul {
+    text-align: right;
+}
+
+.navtoggle.responsive nav {
+    padding: 75px 0 0; /* 20px padding between menu items + 35 for icon = 44 */
+}
+
+.navtoggle.responsive li  {
+    display: block; /* places items on separate lines so that they're vertically stacked */
+    padding: 10px 0;
+}
+  
+/* .navtoggle.responsive li:last-child  {
+    padding: 0 0 50px;
+} */
+
+/* Circle behind */
+/* nav.circleBehind a:before, nav.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+nav.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+nav.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+nav.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+} */
+
+[class*="col-"] { /* attribute selector, selects for every class with "col-" */
+    float: left;
+    padding: 10px;
+}
+
+.wide {
+    padding: 0;
+}
+
+.row::after { /* "clearing" the flow so that other elements don't take the spot of the preview picture */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main::after { /* "clearing" the flow so that other elements don't take the spot of the preview picture */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* .center_lg {
+    justify-content: center;
+} */
+
+
+/* ------- MEDIA QUERIES ------- */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) { /* when a screen size (viewport width) is 640px or larger, it needs to use the following styling */
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    header {
+        text-align: unset;
+        /* padding: 20px; CF had 20px 0 13px */
+    }
+    
+    .logo {
+        margin: 5px 0;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        /* margin-top: 4px; */
+    }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li { /* this selects list elements in unordered lists within the nav element */
+        display: inline-block; /* moving items to one line */
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .navtoggle.responsive nav { 
+        padding-top: 0px; 
+    }
+
+    main {
+        padding-top: 50px;
+    }
+    
+    .col-md-6 { /* col=column, md=medium devices, 6=6 column span */
+        width: 50%;
+    }
+    
+    #about-page h3 { 
+        margin-top: 0;
+    }
+
+    .greeting {
+        padding: 40px 0 20px;
+    }
+
+    #home_greeting .col-lg-5 {
+        display: flex;
+        align-items: center;
+    }
+
+    .image-container {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-lg-7 { /* left column for project preview images */
+        width: 60%;
+    }
+
+    .col-lg-5 { /* right column for project preview blurbs */
+        width: 40%;
+    }
+
+    .col-md-3 {
+        width: 33%;
+    }
+
+    .center_lg {
+        padding: auto;
+        display: inline-flex;
+        align-items: center;
+        /* height: 100vh; */
+    }
+
+    footer > div > ul > li {
+        display: block;
+        padding: 0;
+    }
+    
+    footer > div > ul > li > span > p {
+        margin: 0;
+    }
+}
+    
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 10%;
+    }
+
+    .provider {
+        max-width: 75%;
+    }
+
+    .provider_rounded {
+        max-width: 75%;
+    }
+}
