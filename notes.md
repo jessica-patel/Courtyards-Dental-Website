@@ -89,31 +89,93 @@ testing
 
 
 
-Notes
-
-change transparent pricing to satisfaction gurantee or caring service
-
-informed instead of honest
-
-2018 -> 2017
-
-emphasis on UBC
-
-listening, diagnostic judgment
-List of awards below
-keep ontario force and college certification lower
+Dr. Anna Edits
 
 
-Gum Management and Oral Health Instructions
-Oral Cancer Screening & Oral Diseases Management
-take out sleep disorder dentistry
-take out bite appliance
-take out we submit in clinic claims
+change transparent pricing to satisfaction gurantee or caring service *
 
-put map
+informed instead of honest *
 
-put email as _at_
+2018 -> 2017 *
 
-take out fax
+emphasis on UBC *
 
-change domain later
+
+Dr. Anna earned her <span class="purple">Doctor of Dental Medicine degree</span> at the University of British Columbia, Canada (2012).
+
+Prior to this, she completed her <span class="purple">Honours Bachelor degree for Dental Surgery</span> at University of Peradeniya, Sri Lanka (2002) with distinctions in surgery, prosthetic dentistry, restorative dentistry, and oral medicine. Following her bachelor degree, Dr. Anna worked at a dental teaching hospital in Peradeniya and was an assistant lecturer in Oral Medicine and Radiology at the university.
+
+To gain experience as a professional dentist, Dr. Anna worked as an associate dentist in several dental clinics, before opening Courtyards Dental Center in 2017.
+
+Dr. Anna prioritizes listening to her patients and carries sound diagnostic judgement. She is a certified member of the <span class="purple">Royal College of Dental Surgeons of Ontario (2012)</span> and the <span class="purple">Ontario Dental Association (2017)</span>. She also completed the <span class="purple">FORCE Orthodontic Program</span> (2019).
+
+Awards
+Quintessence Award for Clinical Achievement in Periodontics (2012)
+Professor M. A. Brito Muthunayagam Gold Medal (2002)
+Dr. Ranjan Abeysinghe Prize for Dental Surgery (2002)
+Sri Lankan Dental Association Award (2002)
+
+
+
+
+listening, diagnostic judgment *
+List of awards below *
+keep ontario force and college certification lower *
+
+
+Gum Management and Oral Health Instructions *
+Oral Cancer Screening & Oral Diseases Management *
+take out sleep disorder dentistry *
+take out bite appliance *
+take out we submit in clinic claims *
+
+put map -------- *
+
+put email as _at_ *
+
+take out fax *
+
+
+Christina Edits
+
+Bigger gaps *
+more space and rounded boxes *
+make arrows at sides, and smaller x
+About: add gap after contact us *
+full time students *
+logos of insurance companies *
+
+Kaveen notes:
+- map, api for phone screen x
+- make bio brief *
+- add logos for certifications x
+- try a lighter grey *
+- try to get testimonials x
+- try to group procedures, add icons x
+- insurance - add logos *
+
+
+TODO:
+fix Dr Anna edits *
+fix Nina edits * 
+fix Kaveen edits * 
+go through and add edits *
+add interactivity
+add map *
+fix greeting *
+make steps? *
+copyright research and statement
+clean up files
+custom domain - cheap domains
+add boldness for hover over menu *
+fix centered blurbs *
+add design to blurbs
+add copy button to contact links
+
+
+add interactivity - slow load
+copyright research and statement x
+clean up files
+custom domain - cheap domains
+add design to blurbs x
+add copy button to contact links

@@ -19,8 +19,6 @@
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- required to add fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Paprika&family=Poppins:wght@300&family=Sofia+Sans&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
         <!-- hamburger menu -->
@@ -58,64 +56,81 @@
             </div>
             
             <!-- block for clinic info -->
-            <div class="container v_container">
-                <div>
+            <div id="story">
+                <div class="container white_space">
                    <!-- row for columns-->
-                    <div id="story">
+                    <div class="row">
                         <!-- column 1 -->
-                        <div class="row">
-                            <div class="col-md-6 container">
-                                <h2>Procedures</h2>
-                                <ul>
-                                    <li>Gum Management &amp; Oral Health Instructions</li>
-                                    <li>Oral Cancer Screening</li>
-                                    <li>Oral Diseases Management</li>
-                                    <li>Wisdom Tooth Extraction</li>
-                                    <li>Kids Dentistry</li>
-                                    <li>Crowns &amp; Bridges</li>
-                                    <li>Root Canal Treatment</li>
-                                    <li>Cosmetic Dentistry</li>
-                                    <li>Full &amp; Partial Dentures</li>
-                                    <li>Mouthguards &amp; Nightguards</li>
-                                    <li>Orthodontics (Fixed Braces)</li>
-                                    <li>Emergency Dental Services</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <span>
-                                    <picture>
-                                        <source srcset="img/braces.jpg" media="(max-width:767px)">
-                                        <img src="img/braces.jpg" alt="Braces" class="rounded">
-                                    </picture>
-                                </span>
-                            </div>
+                        <div class="col-md-6 container">
+                            <h2>Procedures</h2>
+                            <ul>
+                                <li>Gum Management &amp; Oral Health Instructions</li>
+                                <li>Oral Cancer Screening</li>
+                                <li>Oral Diseases Management</li>
+                                <li>Wisdom Tooth Extraction</li>
+                                <li>Kids Dentistry</li>
+                                <li>Crowns &amp; Bridges</li>
+                                <li>Root Canal Treatment</li>
+                                <li>Cosmetic Dentistry</li>
+                                <li>Full &amp; Partial Dentures</li>
+                                <li>Mouthguards &amp; Nightguards</li>
+                                <li>Orthodontics (Fixed Braces)</li>
+                                <li>Emergency Dental Services</li>
+                            </ul>
                         </div>
-                        <!-- column 2 -->
-                        <div class="row">
-                            <div class="col-md-6 container" style="display: block;">
-                                <h2>Insurance</h2>
-                                <p>All insurance plans and payment methods are accepted. Please provide your insurance details and let us know about insurance changes during your visit.</p>
-                            </div>
-                            <!-- column 3 -->
-                            <div class="col-lg-7 container">
-                                <h2>Languages</h2>
-                                <ul>
-                                    <li>English</li>
-                                    <li>Tamil</li>
-                                    <li>Sinhalese</li>
-                                </ul>
-                            </div>
+                        <div class="col-md-6">
+                            <span>
+                                <picture>
+                                    <source srcset="img/braces.jpg" media="(max-width:767px)">
+                                    <img src="img/braces.jpg" alt="Braces" class="rounded">
+                                </picture>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div>
+                <div>
+                    <!-- column 2 -->
+                    <div class="row container white_space">
+                        <div class="col-lg-7 container" style="display: block;">
+                            <h2>Insurance</h2>
+                            <p>
+                                All insurance plans and payment methods are accepted. Please provide your insurance details and let us know about insurance changes during your visit.
+                            </p>
+                            <p>
+                                Full-time students above age 21 should ensure that they are still covered by insurance.
+                            </p>
+                        </div>
+                        <div class="col-lg-5">
+                            <span>
+                                <picture>
+                                    <source srcset="img/insurances.png" media="(max-width:767px)">
+                                    <img src="img/insurances.png" alt="Insurance Companies">
+                                </picture>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- column 3 -->
+            <div class="container white_space">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Tamil</li>
+                    <li>Sinhalese</li>
+                </ul>
+            </div>
         </main>
 
         <footer id="contact">
-            <div class="container v_container">
+            <div class="container" style="padding: 40px 0 10px 0;">
                 <h2 class="center">Contact Us</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <p>We are happy to answer any questions. <br>Give us a call!</p>
                         <ul>
                             <li>
@@ -125,24 +140,18 @@
                                 </span>
                             </li>
                             <li>
-                                <span class="icon-with-text" style="align-items: center;">
-                                    <i class="fa-solid fa-fax icon" style="color: #000000;"></i>
-                                    <p>(905) 553 - 6266</p>
-                                </span>
-                            </li>
-                            <li>
                                 <span class="icon-with-text" style="align-items: first baseline;">
                                     <i class="fa-solid fa-location-dot icon" style="color: #000000;"></i>
-                                    <p>2396 Major Mackenzie Drive W., Unit #6,<br>Vaughan, ON L6A 4Y1</p>
+                                    <p>2396 Major Mackenzie Drive W.,<br>Unit #6, Vaughan, ON L6A 4Y1</p>
                                 </span>
                             </li>
                         </ul>
                         <div class="container">
-                            <a href="mailto:courtyardsdental@gmail.com" class="button contact">Send an Email</a>
+                            <a href="mailto:courtyardsdental_at_gmail.com" class="button contact">Send an Email</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h3>Clinic Hours</h3>
+                    <div class="col-md-3">
+                        <h3 style="margin: 0;">Clinic Hours</h3>
                         <table border="1">
                             <!-- <tr>
                                 <th>Header 1</th>
@@ -179,10 +188,15 @@
                             </tr>
                         </table>
                     </div>
+                    <div class="col-md-3">
+                        <div class="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0792006302063!2d-79.51950782369553!3d43.85418707109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b28d8ee0ff13f%3A0xf2a5d09ad2e4084d!2sCourtyards%20Dental%20Center%20-%20Dr.%20Annahvathany%20Sivakumaran%2C%20DMD!5e0!3m2!1sen!2sca!4v1692977421797!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                    </div>
                 </div>
-                <div class="container center">
+                <!-- <div class="center">
                     <p>Copyright Statement</p>
-                </div>
+                </div> -->
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

@@ -19,8 +19,6 @@
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- required to add fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Paprika&family=Poppins:wght@300&family=Sofia+Sans&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
         <!-- hamburger menu -->
@@ -40,7 +38,6 @@
                             <li><a href="#top">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="services.html">Services</a></li>
-                            <!-- <li><a href="contact_us.html">Contact</a></li> -->
                             <li><a href="#contact" class="button">Contact Us</a></li>
                             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
                                 <i class="fas fa-bars"></i></a></li>
@@ -52,57 +49,64 @@
 
         <main id="top">
             <!-- for the greeting section -->
-            <div id="home_greeting" class="greeting" name="work">
-                <div class="row"> <!-- extra div to create a row to put a bottom border -->
-                    <div class="center" style="padding-left: auto;">
-                        <span style="float:none;">
-                            <div class="col-lg-5" style="display: block;">
-                                <h1>Welcome to<br>Courtyards Dental Center</h1>
+            <div id="home_greeting" class="center greeting row">
+                <div style="padding: auto;">  <!-- style="padding-left: auto;" class="center" -->
+                    <!-- <span style="float: inherit; vertical-align: middle;"> -->
+                        <div class="center col-lg-5 new" style="display: block;" id="greeting_text">
+                            <h1>Welcome to<br>Courtyards Dental Center</h1>
+                            <div>
                                 <p>We create smiles you'd be proud of sharing!</p>
                                 <a href="#contact" class="button">CONTACT US</a>
                             </div>
-                        </span>
-                    </div>
-                    <div class="col-lg-7 wide">
-                        <span>
-                            <picture>
-                            <source srcset="img/front.jpg" media="(max-width:767px)">
-                            <img src="img/front.jpg" alt="Entrance View of Clinic">
-                            </picture>
-                        </span>
-                    </div>
+                            
+                        </div>
+                    <!-- </span> -->
+                </div>
+                <div class="col-lg-7 wide"> 
+                    <span style="vertical-align: middle;">
+                        <picture>
+                        <source srcset="img/front.jpg" media="(max-width:767px)">
+                        <img src="img/front.jpg" alt="Entrance View of Clinic">
+                        </picture>
+                    </span>
                 </div>
             </div>
 
             <!-- for the triple standard section -->
-            <div class="v_container" id="triple">
+            <div class="v_container white_space" id="triple">
                 <div>
                     <h2 class="center">What Sets Us Apart</h2>
                     <!-- three standards -->
                     <div class="row container center"> <!-- containing all 3 -->
-                        <div class="col-md-3 center">
+                        <div class="col-md-3">
                             <picture>
                                 <source srcset="img/price.png" media="(max-width:767px)">
-                                <img src="img/price.png" alt="Transparent Pricing Icon" class="triple_picture">
+                                <img src="img/price.png" alt="Caring Service Icon">
                             </picture>
-                            <h3>Transparent Pricing</h3>
-                            <p class="blurb">We provide the dental care that you need, while keeping you aware of pricing.</p>
+                            <div>
+                                <h3>Caring Service</h3>
+                                <p>We provide the services that you need, while showing the care that you want.</p>
+                            </div>
                         </div>
-                        <div class="col-md-3 center">
+                        <div class="col-md-3">
                             <picture>
                                 <source srcset="img/hours.png" media="(max-width:767px)">
-                                <img src="img/hours.png" alt="Transparent Pricing Icon" class="triple_picture">
+                                <img src="img/hours.png" alt="Flexible Hours Icon">
                             </picture>
-                            <h3>Flexible Hours</h3>
-                            <p class="blurb">We help you fit in your dental visits, despite your busy schedule.</p>
+                            <div>
+                                <h3>Flexible Hours</h3>
+                                <p>We help you fit in your dental visits, despite your busy schedule.</p>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-lg-7 center">
+                        <div class="col-md-3">
                             <picture>
                                 <source srcset="img/emergency.png" media="(max-width:767px)">
-                                <img src="img/emergency.png" alt="Transparent Pricing Icon" class="triple_picture">
+                                <img src="img/emergency.png" alt="Emergency Support Icon">
                             </picture>
-                            <h3>Emergency Support</h3>
-                            <p class="blurb">You can rely on us to provide guidance or treatment in emergencies.</p>
+                            <div>
+                                <h3>Emergency Support</h3>
+                                <p>You can rely on us to provide guidance or treatment in emergencies.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,15 +114,38 @@
 
 
             <!-- for the provider blurb -->
-            <div class="container v_container">
+            <div class="container v_container white_space">
                 <div class="border">
                     <div class="row">
-                        <div class="col-md-6">
-                            <h2>Providing you honest and educative dentistry</h2>
+                        <div class="container col-lg-7">
+                            <h2 class="blurb" style="margin-left: auto;">Providing you informed and educative dentistry.</h2>
                             <p class="blurb" style="padding-top: 20px;">We ensure understanding of dental hygiene practices, maintenance of oral health, and clarity through procedures so that you can have the utmost care for your smile!
                             </p>
+                            <h3 class="blurb" style="padding-top: 20px;">New patients are welcome!</h3>
+                            <p class="blurb" style="padding-top: 20px;">Here are the steps you can follow for your onboarding experience.</p>
+                            <ul style="list-style-type: none; margin: 0.5em 0 0.5em 2em;">
+                                <li>
+                                    <span class="icon-with-text" style="align-items: first baseline;">
+                                        <i class="fa-solid fa-check" style="color: #000000;"></i>
+                                        <p class="new_patients_list">Determine your insurance coverage or payment details <br>(we can help you!).</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon-with-text" style="align-items: first baseline;">
+                                        <i class="fa-solid fa-check" style="color: #000000;"></i>
+                                        <p class="new_patients_list">Call us to book an appointment.</p>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon-with-text" style="align-items: first baseline;">
+                                        <i class="fa-solid fa-check" style="color: #000000;"></i>
+                                        <p class="new_patients_list">Arrive for your appointment and fill an intake form.</p>
+                                    </span>
+                                </li>
+                            </ul>
+                            <p class="blurb" style="padding-bottom: 20px;">It's as easy as that!</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-5" style="padding: 20px 40px 20px 0;">
                             <picture>
                                 <source srcset="img/kid_dentist.jpg" media="(max-width:767px)">
                                 <img src="img/kid_dentist.jpg" alt="Child at dentist" class="provider">
@@ -131,7 +158,7 @@
 
         <!-- for the footer -->
         <footer id="contact">
-            <div class="container v_container">
+            <div class="container" style="padding: 40px 0 10px 0;">
                 <h2 class="center">Contact Us</h2>
                 <div class="row">
                     <div class="col-md-3">
@@ -144,24 +171,18 @@
                                 </span>
                             </li>
                             <li>
-                                <span class="icon-with-text" style="align-items: center;">
-                                    <i class="fa-solid fa-fax icon" style="color: #000000;"></i>
-                                    <p>(905) 553 - 6266</p>
-                                </span>
-                            </li>
-                            <li>
                                 <span class="icon-with-text" style="align-items: first baseline;">
                                     <i class="fa-solid fa-location-dot icon" style="color: #000000;"></i>
-                                    <p>2396 Major Mackenzie Drive W., Unit #6,<br>Vaughan, ON L6A 4Y1</p>
+                                    <p>2396 Major Mackenzie Drive W.,<br>Unit #6, Vaughan, ON L6A 4Y1</p>
                                 </span>
                             </li>
                         </ul>
                         <div class="container">
-                            <a href="mailto:courtyardsdental@gmail.com" class="button contact">Send an Email</a>
+                            <a href="mailto:courtyardsdental_at_gmail.com" class="button contact">Send an Email</a>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <h3>Clinic Hours</h3>
+                        <h3 style="margin: 0;">Clinic Hours</h3>
                         <table border="1">
                             <!-- <tr>
                                 <th>Header 1</th>
@@ -198,13 +219,15 @@
                             </tr>
                         </table>
                     </div>
-                    <!-- <div class="col-md-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0792006302063!2d-79.51950782369553!3d43.85418707109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b28d8ee0ff13f%3A0xf2a5d09ad2e4084d!2sCourtyards%20Dental%20Center%20-%20Dr.%20Annahvathany%20Sivakumaran%2C%20DMD!5e0!3m2!1sen!2sca!4v1692977421797!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div> -->
+                    <div class="col-md-3">
+                        <div class="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.0792006302063!2d-79.51950782369553!3d43.85418707109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b28d8ee0ff13f%3A0xf2a5d09ad2e4084d!2sCourtyards%20Dental%20Center%20-%20Dr.%20Annahvathany%20Sivakumaran%2C%20DMD!5e0!3m2!1sen!2sca!4v1692977421797!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                    </div>
                 </div>
-                <div class="container center">
+                <!-- <div class="center">
                     <p>Copyright Statement</p>
-                </div>
+                </div> -->
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

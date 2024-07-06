@@ -47,3 +47,49 @@ nextButton.addEventListener('click', () => {
 
 // Initial image
 showImage(currentIndex);
+
+
+// lazy reveal
+const content = document.querySelector('.content');
+
+function revealContent() {
+  const contentRect = content.getBoundingClientRect();
+
+  if (contentRect.top < window.innerHeight) {
+    content.style.display = 'block';
+  }
+}
+
+window.addEventListener('scroll', revealContent);
+
+
+
+const slowLoadElement = document.getElementById('slowLoadElement');
+
+function checkScroll() {
+  const elementTop = slowLoadElement.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (elementTop < windowHeight) {
+    slowLoadElement.classList.remove('hidden');
+    slowLoadElement.style.opacity = '1';
+    slowLoadElement.style.transform = 'translateY(0)';
+    window.removeEventListener('scroll', checkScroll);
+  }
+}
+
+window.addEventListener('scroll', checkScroll);
+
+const observer = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
